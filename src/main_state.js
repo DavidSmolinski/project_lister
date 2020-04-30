@@ -35,22 +35,22 @@ export let main_state = {
   projects: [
     {
       // 0
-      name: 'proj 0',
+      name: 'project 0',
       url: 'blank',
     },
     {
       // 1
-      name: 'proj 1',
+      name: 'project 1',
       url: 'blank',
     },
     {
       // 2
-      name: 'proj 2',
+      name: 'project 2',
       url: 'blank',
     },
     {
       // 3
-      name: 'proj 3',
+      name: 'project 3',
       url: 'blank',
     }
   ],
