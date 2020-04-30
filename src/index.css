@@ -1,13 +1,139 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.App-logo {
+  height: 5vmin;
+  pointer-events: none;
+  padding: .01em 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.title {
+  margin-top: 50px;
+  color: white;
+  font-weight: bolder !important;
+  padding-bottom: 5px !important;
+  padding: 16px;
+  background-color: #e67244;
+  border: 1px solid #e67244;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+}
+
+.jumbo-heading {
+  background-color: rgb(97, 218, 251);
+  padding: 4px;
+  color: white;
+  border: 1px solid rgb(97, 218, 251);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+}
+
+.date {
+  margin-bottom: 0;
+  font-size: 16px;
+  display: inline-flex;
+  margin-right: 100px;
+}
+
+.jumbotron {
+  padding: 16px;
+  border-radius: 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+}
+
+.checkbox {
+  background-color: white;
+  padding: 5px 1px;
+  margin: 5px 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+  border-radius: 10px;
+}
+
+.checkbox:hover {
+  padding: 11px 3px 9px 3px;
+  border-radius: 12px;
+}
+
+.task-label {
+  font-size: 16px;
+  padding: 8px;
+  margin-bottom: 0 !important;
+}
+
+.task-label:hover {
+  font-weight: bolder;
+  text-decoration: underline overline;
+}
+
+/* .task-label i {
+  font-size: 12px;
+  border: 2px solid;
+  padding: 2px;
+  border-radius: 5px;
+} */
+
+@media screen and (min-width: 480px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  html {
+    font-size: 12pt;
+  }
+  h2 {
+    font-size: 28pt;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  html {
+    font-size: 11pt;
+  }
+  h2 {
+    font-size: 22pt;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 10pt;
+  }
+  h2 {
+    font-size: 18pt;
+  }
+}
+
+#root {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-image: url("bee_bg.jpg");
+  background-position: top center;
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+}
+
+a:hover {
+  color: orangered;
 }
