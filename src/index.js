@@ -152,7 +152,7 @@ class Main extends Component {
           
           
           <div className="jumbotron">
-            This app is made with VueJS and JavaScript. It will allow users to
+            This app is made with ReactJS and JavaScript. It will allow users to
             select code skills (languages, modules, etc.) in my portfolio, and view
             projects that use those skills. For now, I'm using dummy data for skills
             and projects.
