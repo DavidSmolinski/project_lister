@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import logo from './logo.png';
-import head from './head.png';
+import react_logo from './assets/react_logo.png';
+import vue_logo from './assets/vue_logo.png';
+import head from './assets/head.png';
 import * as serviceWorker from './serviceWorker';
 import { main_state } from './main_state';
 import { numpy as np } from './python.js';
@@ -125,18 +126,17 @@ class Main extends Component {
             <h2>
               <img src={head} className="App-logo" alt="head" />
               Portfolio Lister
-              <img src={logo} className="App-logo" alt="logo" />
+              <img src={react_logo} className="App-logo" alt="logo" />
             </h2>
           </div>
           <div className="jumbo-heading">
             <h6 className="date">by David Smolinski</h6>
           </div>
-          <div className="jumbotron">
+          {/* <div className="jumbotron">
             <p>
               This app is made with ReactJS and JavaScript. It will allow users to select code skills
               (languages, modules, etc.) in my portfolio,
-              and view projects that use those skills. For now, I'm using dummy data for skills and projects. Entering
-              the real data will take time. I might reorganize my portfolio before doing that. <a
+              and view projects that use those skills. For now, I'm using dummy data for skills and projects. <a
                 href="https://github.com/DavidSmolinski/portfolio/tree/master/table%20of%20contents">
                 View my code portfolio here.</a>
             </p>
@@ -148,7 +148,77 @@ class Main extends Component {
               When there is a difference in the n.s. skills per project, these differences are shown with green
               highlighting. Projects with more selected skills are greener.
             </p>
+          </div> */}
+          
+          
+          <div className="jumbotron">
+            This app is made with VueJS and JavaScript. It will allow users to
+            select code skills (languages, modules, etc.) in my portfolio, and view
+            projects that use those skills. For now, I'm using dummy data for skills
+            and projects.
           </div>
+
+          <div className="jumbo-heading">
+            <h6 className="date">Links</h6>
+          </div>
+
+          <div className="jumbotron links">
+            <a
+              className="checkbox_link"
+              href="https://davidsmolinski.github.io/project_lister/"
+            >
+              <span>
+                <label>
+                  <img
+                    src={vue_logo}
+                    className="App-logo-still"
+                    alt="vue_logo"
+                  />
+                  Vue version
+                </label>
+              </span>
+            </a>
+            <a
+              className="checkbox_link"
+              href="https://github.com/DavidSmolinski/project_lister_vue/tree/master"
+            >
+              <span>
+                <label>
+                  <img
+                    src={vue_logo}
+                    className="App-logo-still"
+                    alt="vue_logo"
+                  />
+                  Vue code
+                </label>
+              </span>
+            </a>
+            <a
+              className="checkbox_link"
+              href="https://github.com/DavidSmolinski/portfolio/tree/master/table%20of%20contents"
+            >
+              <span>
+                <label>
+                  my code portfolio
+                </label>
+              </span>
+            </a>
+          </div>
+
+          <div className="jumbo-heading">
+            <h6 className="date">Instructions</h6>
+          </div>
+          <div className="jumbotron">
+            Click on skills to select or unselect them. Selected skills are
+            highlighted orange. A list of projects with at least one of the selected
+            skills will be shown. The number of selected skills (n.s. skills) a
+            project uses is listed before its name. The list is ordered by the n.s.
+            skills each project uses. When there is a difference in the n.s. skills
+            per project, these differences are shown with green highlighting.
+            Projects with more selected skills are greener.
+          </div>
+          
+          
 
           <div className="jumbo-heading">
             <h6 className="date">code skills</h6>

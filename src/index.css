@@ -1,7 +1,12 @@
+.App-logo-still {
+  height: 5vmin;
+  pointer-events: none;
+}
+
 .App-logo {
   height: 5vmin;
   pointer-events: none;
-  padding: .01em 10px;
+  padding: 0.01em 10px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -49,6 +54,23 @@
   padding: 16px;
   border-radius: 0;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+}
+
+.links {
+  padding: 8px 10px 0px 10px;
+}
+
+.checkbox_link {
+  background-color: white;
+  padding: 25px 0px;
+  margin: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+}
+
+.checkbox_link label {
+  color: black;
+  padding: 25px 8px;
 }
 
 .checkbox {
@@ -120,7 +142,7 @@
 }
 
 #root {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   width: 100%;
@@ -128,12 +150,12 @@
 }
 
 body {
-  background-image: url("bee_bg.jpg");
+  background-image: url("./assets/bee_bg.jpg");
   background-position: top center;
   background-repeat: repeat-y;
   background-size: 100% auto;
 }
 
 a:hover {
-  color: orangered;
+  background-color: #e67244;
 }
