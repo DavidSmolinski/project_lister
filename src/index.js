@@ -165,7 +165,7 @@ class Main extends Component {
           <div className="jumbotron links">
             <a
               className="checkbox_link"
-              href="https://davidsmolinski.github.io/project_lister/"
+              href="https://davidsmolinski.github.io/project_lister_vue/"
             >
               <span>
                 <label>
